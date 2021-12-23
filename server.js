@@ -35,7 +35,7 @@ const task = async() => {
     const description = response.data.items.map((item) => item.snippet.description);
     const pAt = response.data.items.map((item) => item.snippet.publishedAt);
     const url = response.data.items.map((item) => item.snippet.thumbnails.default.url);
-    console.log(url);
+    //console.log(url);
     
     
     for(var i=0;i<5;i++) { 
@@ -47,7 +47,7 @@ const task = async() => {
         //console.log(i)
         await newYTData.save();
     }
-    setTimeout(task, 1000000);
+    setTimeout(task, 1000000000);
     } catch(err) {
         console.log(err)
     }
