@@ -25,8 +25,8 @@ const task = async() => {
     try{
     const response = await youtube.search.list({
         part: "snippet",
-        maxResults:50,
-        q:"spiderman",
+        maxResults:5,
+        q:"free fire",
         type:"video",
         order:"date" ,
         publishedAfter:"2021-01-01T00:00:00Z"
@@ -47,7 +47,7 @@ const task = async() => {
         //console.log(i)
         await newYTData.save();
     }
-    setTimeout(task, 100000000);
+    setTimeout(task, 1000000000);
     } catch(err) {
         console.log(err)
     }

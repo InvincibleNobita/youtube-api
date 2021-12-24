@@ -14,7 +14,7 @@
   .app {
     padding: 25px;
     min-height: 100vh;
-    background: rgba(214, 46, 24, 0.925);
+    background: rgb(252, 239, 237);
   }
   *{
       box-sizing: border-box;
